@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = 9000;
 
-// Definir las rutas
+
 app.get('/', (req, res) => {
   res.send('Laboratorio 4');
 });
@@ -17,7 +17,7 @@ app.get('/productos', (req, res) => {
   res.json(productos);
 });
 
-// Iniciar el servidor
+
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
